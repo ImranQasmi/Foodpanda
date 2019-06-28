@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './component/Userlogin.css'
+import './component/Usersignup.css'
+import './component/Restaurant.css'
+import './component/Itemdisplay.css'
+import Userlogin from './component/Userlogin';
+import Navbar from './component/Navbar';
+import Usersignup from './component/Usersignup';
+import Restaurant from './component/Restaurant'
+import FullWidthTabs from './component/Restuarantdashb'
+import ComplexGrid from './component/Itemdisplay'
+import OutlinedTextFields from './component/Search'
+import Routercomponent from './component/Routercomponent'
+import Home from './component/Home'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Switchcomponent from './component/Switchcomponent'
+import Footer from './component/Footer'
+import './component/footer.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>    
+      <Routercomponent/>
+      <Footer/>
     </div>
   );
 }
